@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { menuImages, menuItems } from "../data/SiteData";
@@ -10,7 +9,7 @@ export default function MenuPage(): JSX.Element {
       <Header title="お品書き" />
 
       <main className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
-        <div className="fade-up mb-10 rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-[#dcecdf] sm:p-8">
+        <div className="fade-up mb-10 rounded-4xl bg-white p-6 shadow-sm ring-1 ring-[#dcecdf] sm:p-8">
           <p className="text-sm tracking-[0.25em] text-[#6a8f71]">MENU </p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">お品書き</h2>
           <p className="mt-4 max-w-3xl leading-8 text-[#5f7a64]">
@@ -21,11 +20,11 @@ export default function MenuPage(): JSX.Element {
           {menuItems.map((item, index) => (
             <article
               key={item.name}
-              className={`fade-up grid gap-6 rounded-[2rem] border border-[#dcecdf] bg-white p-5 shadow-sm transition hover:shadow-lg sm:p-8 md:grid-cols-[320px_1fr] ${
+              className={`fade-up grid gap-6 rounded-4xl border border-[#dcecdf] bg-white p-5 shadow-sm transition hover:shadow-lg sm:p-8 md:grid-cols-[320px_1fr] ${
                 index === 1 ? "fade-delay-1" : index === 2 ? "fade-delay-2" : ""
               }`}
             >
-              <div className="overflow-hidden rounded-[1.5rem] bg-[#e7f5e9] pulse-glow">
+              <div className="overflow-hidden rounded-3xl bg-[#e7f5e9] pulse-glow">
                 <img
                   src={menuImages[item.name]}
                   alt={item.name}
@@ -47,14 +46,14 @@ export default function MenuPage(): JSX.Element {
                 <p className="mt-4 leading-8 text-[#5f7a64]">{item.detail}</p>
 
                 <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                  <div className="rounded-[1.5rem] bg-[#f6fcf7] p-4 ring-1 ring-[#e1efe3]">
+                  <div className="rounded-3xl bg-[#f6fcf7] p-4 ring-1 ring-[#e1efe3]">
                     <p className="text-sm font-semibold text-[#4d6a53]">主な素材</p>
                     <p className="mt-2 text-sm leading-7 text-[#5f7a64]">
                       {item.ingredients}
                     </p>
                   </div>
 
-                  <div className="rounded-[1.5rem] bg-[#f6fcf7] p-4 ring-1 ring-[#e1efe3]">
+                  <div className="rounded-3xl bg-[#f6fcf7] p-4 ring-1 ring-[#e1efe3]">
                     <p className="text-sm font-semibold text-[#4d6a53]">
                       おすすめの楽しみ方
                     </p>
@@ -64,7 +63,7 @@ export default function MenuPage(): JSX.Element {
                   </div>
                 </div>
 
-                <div className="mt-6 rounded-[1.5rem] bg-[#edf8ef] p-4 text-sm leading-7 text-[#5f7a64]">
+                <div className="mt-6 rounded-3xl bg-[#edf8ef] p-4 text-sm leading-7 text-[#5f7a64]">
                   セット提案：
                   {item.name === "森のブレンド" && " 木の実タルトとのセットで、香ばしさの余韻をより楽しめます。"}
                   {item.name === "抹茶ラテ" && " 季節の焼き菓子と合わせると、やさしい甘さが引き立ちます。"}

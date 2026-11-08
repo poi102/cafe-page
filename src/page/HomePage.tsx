@@ -50,8 +50,8 @@ export default function HomePage(): JSX.Element {
 
             {/* 右（画像） */}
             <div className="fade-up fade-delay-1 mt-10 md:mt-0">
-              <div className="rounded-[2rem] bg-white/60 p-5 shadow-2xl backdrop-blur">
-                <div className="overflow-hidden rounded-[1.5rem] bg-white p-3 shadow-lg">
+              <div className="rounded-4xl bg-white/60 p-5 shadow-2xl backdrop-blur">
+                <div className="overflow-hidden rounded-3xl bg-white p-3 shadow-lg">
                   <img
                     src={heroImage}
                     alt="森のひとときのテラス席"
@@ -77,7 +77,7 @@ export default function HomePage(): JSX.Element {
               {features.map((item: { title: string; text: string }, index: number) => (
                 <div
                   key={item.title}
-                  className={`fade-up rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-[#deefe1] transition hover:-translate-y-1 hover:shadow-lg ${
+                  className={`fade-up rounded-4xl bg-white p-6 shadow-sm ring-1 ring-[#deefe1] transition hover:-translate-y-1 hover:shadow-lg ${
                     index === 1 ? "fade-delay-1" : index === 2 ? "fade-delay-2" : ""
                   }`}
                 >

@@ -1,5 +1,4 @@
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 import type { JSX } from "react";
 
 export default function ContactPage(): JSX.Element {
@@ -22,7 +21,7 @@ export default function ContactPage(): JSX.Element {
             </p>
           </div>
 
-          <form className="rounded-[2rem] border bg-white p-6 shadow-sm">
+          <form className="rounded-4xl border bg-white p-6 shadow-sm">
             <input
               type="text"
               placeholder="お名前"
