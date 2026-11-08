@@ -15,7 +15,7 @@ export default function Header({
 
   return (
     <header className="sticky top-0 z-20 border-b border-[#d6ead8] bg-[#e8f7ea]/95 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 sm:py-5">
+      <div className="mx-auto flex max-w-6xl flex-col items-start gap-4 px-4 py-4 sm:px-6 sm:py-5 md:flex-row md:items-center md:justify-between">
         <div>
           <Link to="/" className="block">
             <p className="text-xs tracking-[0.3em] text-[#6b8f72] sm:text-sm">
@@ -27,7 +27,7 @@ export default function Header({
           </Link>
         </div>
 
-        <nav className="hidden gap-6 text-sm md:flex">
+        <nav aria-label="メインナビゲーション" className="flex flex-wrap gap-6 text-sm">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -51,6 +51,14 @@ export default function Header({
             }
           >
             Concept
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              `${navBase} ${isActive ? navActive : ""}`
+            }
+          >
+            Contact
           </NavLink>
         </nav>
       </div>

@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./page/HomePage";
 import MenuPage from "./page/MenuPage";
 import ConceptPage from "./page/ConceptPage";
+import ContactPage from "./page/ContactPage";
 import type { JSX } from "react";
 
 export default function App(): JSX.Element  {
@@ -10,6 +11,7 @@ export default function App(): JSX.Element  {
       <Route path="/" element={<HomePage />} />
       <Route path="/menu" element={<MenuPage />} />
       <Route path="/concept" element={<ConceptPage />} />
+      <Route path="/contact" element={<ContactPage />} />
     </Routes>
   );
 }

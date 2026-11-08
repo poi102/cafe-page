@@ -46,13 +46,6 @@ export default function ConceptPage(): JSX.Element {
               </p>
             </div>
           </div>
-
-          <Link
-            to="/"
-            className="mt-8 inline-flex rounded-2xl border border-[#b8d9bd] bg-[#f7fff8] px-5 py-3 font-medium text-[#4d6a53] transition hover:bg-white"
-          >
-            ホームへ戻る
-          </Link>
         </section>
       </main>
     </div>

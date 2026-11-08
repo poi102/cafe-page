@@ -7,24 +7,16 @@ import type { JSX } from "react";
 export default function MenuPage(): JSX.Element {
   return (
     <div className="min-h-screen bg-[#f4fbf5] text-[#35543a]">
-      <Header title="メニュー詳細" />
+      <Header title="お品書き" />
 
       <main className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
         <div className="fade-up mb-10 rounded-[2rem] bg-white p-6 shadow-sm ring-1 ring-[#dcecdf] sm:p-8">
-          <p className="text-sm tracking-[0.25em] text-[#6a8f71]">MENU DETAIL</p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">メニュー詳細ページ</h2>
+          <p className="text-sm tracking-[0.25em] text-[#6a8f71]">MENU </p>
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">お品書き</h2>
           <p className="mt-4 max-w-3xl leading-8 text-[#5f7a64]">
-            森のひとときで提供している人気メニューの詳細をご紹介します。味わいだけでなく、過ごしたい時間やおすすめの組み合わせもわかるページにしました。
+            森のひとときで提供している人気のお品書きをご紹介します。味わいだけでなく、過ごしたい時間やおすすめの組み合わせもわかるページにしました。
           </p>
-
-          <Link
-            to="/"
-            className="mt-6 inline-flex rounded-full border border-[#b8d9bd] bg-[#f7fff8] px-5 py-3 font-medium text-[#4d6a53] transition hover:bg-white"
-          >
-            ホームへ戻る
-          </Link>
         </div>
-
         <div className="grid gap-6">
           {menuItems.map((item, index) => (
             <article
